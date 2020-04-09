@@ -1,0 +1,29 @@
+﻿<Window x:Class="QueryToDotNet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QueryToDotNet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" ></RowDefinition>
+            <RowDefinition Height="Auto" ></RowDefinition>
+            <RowDefinition Height="Auto" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="Connection string" Margin="2,2,2,2" FontWeight="Bold"/>
+            <TextBox Name="txtConnectionString" Text="Server=NB-FULLRICH-STG;Database=dgnb_migration_UnitTest;User Id=sa; Password=sa;" TextWrapping="Wrap" Margin="2,2,2,2"/>
+            <Label  Content="Query" Margin="2,20,2,2" FontWeight="Bold"/>
+            <TextBox TextWrapping="Wrap" AcceptsReturn="True" Height="200" Name="txtQuery" Text="select 'Hello' as MyName" Margin="2,2,2,2"/>
+            <Button Name="Run" Content="Run" Width="50" Click="Run_Click"></Button>
+            <DataGrid Name="myGrid" AutoGenerateColumns="True" Margin="2,2,2,2"></DataGrid>
+        </StackPanel>
+        
+    </Grid>
+</Window>
