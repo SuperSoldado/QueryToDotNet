@@ -51,8 +51,8 @@ namespace QueryToDotNet
             myList.Add(myClass3);
             //myGrid.ItemsSource = myList;
 
-            GenericQuery d = new GenericQuery(txtConnectionString.Text);
-            List<MyClass> resultFromDB = (List<MyClass>)d.GetData(txtQuery.Text, typeof(MyClass));
+            GenericQuery genericQuery = new GenericQuery(txtConnectionString.Text);
+            List<MyClass> resultFromDB = (List<MyClass>)genericQuery.GetData(txtQuery.Text, typeof(MyClass));
             myGrid.ItemsSource = resultFromDB;
         }
     }

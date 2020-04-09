@@ -7,6 +7,7 @@ using System.Text;
 namespace QueryToDotNet
 {
     /// <summary>
+    /// Author: Freddy Ullrich
     /// This class is used for DAO classes to fill the "SomethingInfo" with the data reader. 
     /// This class may cause a lot of bugs in future because of difficult to sychronize 
     /// the database data with .Net data, expecialy trating nullables.

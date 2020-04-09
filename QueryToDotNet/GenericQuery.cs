@@ -6,6 +6,10 @@ using System.Text;
 
 namespace QueryToDotNet
 {
+    /// <summary>
+    /// Athor: Freddy Ullrich
+    /// Convert query to .net class list
+    /// </summary>
     public class GenericQuery
     {
 
